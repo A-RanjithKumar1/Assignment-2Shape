@@ -1,10 +1,15 @@
 package org.example;
-
 import java.util.Scanner;
-import java.util.*;
 public class shape{
     String typeOfShape;
-    double length,breadth,radius,side1,side2,side3,base,height;
+    double length;
+    double breadth;
+    double radius;
+    double side1;
+    double side2;
+    double side3;
+    double base;
+    double height;
     static final float pi = 3.14f;
     shape(float a,float b){
         length=a;
@@ -18,7 +23,7 @@ public class shape{
     }
     public double perimeter(String s){
         if((s.toUpperCase()).equals("TRIANGLE")){
-            return (double)(side1+side2+side3);
+            return (side1+side2+side3);
         }
         else if((s.toUpperCase()).equals("RECTANGLE")){
             return (2*(length+breadth));
@@ -30,7 +35,7 @@ public class shape{
     }
     public double area(String s){
         if((s.toUpperCase()).equals("TRIANGLE")){
-            return (double)(1.5*base*height);
+            return (1.5*base*height);
         }
         else if((s.toUpperCase()).equals("RECTANGLE")){
             return (length*breadth);
