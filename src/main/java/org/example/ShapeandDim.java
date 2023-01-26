@@ -4,6 +4,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 class ShapeAndDim{
     private static final Logger LOGGER =  Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+    private static final String Triangle = "TRIANGLE";
+    private static final String Rectangle = "RECTANGLE";
+    private static final String Circle = "Circle";
     String typeOfShape;
     double length;
     double breadth;
@@ -25,25 +28,25 @@ class ShapeAndDim{
         radius=r;
     }
     public double perimeter(String s){
-        if((s.toUpperCase()).equals("TRIANGLE")){
+        if((s.toUpperCase()).equals(Triangle)){
             return (side1+side2+side3);
         }
-        else if((s.toUpperCase()).equals("RECTANGLE")){
+        else if((s.toUpperCase()).equals(Rectangle)){
             return (2*(length+breadth));
         }
-        else if((s.toUpperCase()).equals("CIRCLE")){
+        else if((s.toUpperCase()).equals(Circle)){
             return (2*PI*radius);
         }
         return 0.0;
     }
     public double area(String s){
-        if((s.toUpperCase()).equals("TRIANGLE")){
-            return (1.5*base*height);
+        if((s.toUpperCase()).equals(Triangle)){
+            return (0.5*base*height);
         }
-        else if((s.toUpperCase()).equals("RECTANGLE")){
+        else if((s.toUpperCase()).equals(Rectangle)){
             return (length*breadth);
         }
-        else if((s.toUpperCase()).equals("CIRCLE")){
+        else if((s.toUpperCase()).equals(Circle)){
             return (PI*radius*radius);
         }
         return 0.0;
@@ -52,7 +55,7 @@ class ShapeAndDim{
         Scanner sc =new Scanner(System.in);
         LOGGER.log(Level.INFO,"Please enter the shape for which you want to find Area and Perimeter");
         String op=sc.next();
-        if((op.toUpperCase()).equals("RECTANGLE")){
+        if((op.toUpperCase()).equals(Rectangle)){
             LOGGER.log(Level.INFO,"Enter the length of the Rectangle");
             float l=sc.nextFloat();
             LOGGER.log(Level.INFO,"Enter the breadth of the Rectangle");
@@ -82,7 +85,7 @@ class ShapeAndDim{
                 LOGGER.log(Level.INFO,"Oh! choose the correct option");
             }
         }
-        else if((op.toUpperCase()).equals("TRIANGLE")){
+        else if((op.toUpperCase()).equals(Triangle)){
             LOGGER.log(Level.INFO,"Enter the base of the Triangle");
             float b1=sc.nextFloat();
             LOGGER.log(Level.INFO,"Enter the height of the Triangle");
@@ -101,7 +104,7 @@ class ShapeAndDim{
             }
             else if(option==2){
                 ShapeAndDim figure=new ShapeAndDim(b1,h1,s1,s2,s3);
-                double ar1=figure.area("rectangle");
+                double ar1=figure.area("Triangle");
                 LOGGER.log(Level.INFO,"The Area of the Triangle is-----"+ar1);
             }
             else if(option==3){
@@ -109,14 +112,14 @@ class ShapeAndDim{
                 double pm1=figure.perimeter("Triangle");
                 LOGGER.log(Level.INFO,"The perimeter of the Triangle is-----"+pm1);
                 ShapeAndDim figure2=new ShapeAndDim(b1,h1,s1,s2,s3);
-                double ar1=figure2.area("rectangle");
+                double ar1=figure2.area("Triangle");
                 LOGGER.log(Level.INFO,"The Area of the Triangle is-----"+ar1);
             }
             else{
                 LOGGER.log(Level.INFO,"Oh! choose the correct option");
             }
         }
-        else if((op.toUpperCase()).equals("CIRCLE")){
+        else if((op.toUpperCase()).equals(Circle)){
             LOGGER.log(Level.INFO,"Enter the radius of the Circle");
             float r=sc.nextFloat();
             String z=String.format("Select the Below required option\n1.Perimeter\n2.Area\n3.Both");
