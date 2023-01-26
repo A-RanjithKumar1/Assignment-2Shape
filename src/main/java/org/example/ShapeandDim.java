@@ -7,6 +7,7 @@ class ShapeAndDim{
     private static final String TRIANGLE= "TRIANGLE";
     private static final String RECTANGLE = "RECTANGLE";
     private static final String CIRCLE = "CIRCLE";
+    private static final String OPTIONS="Select the Below required option\n1.Perimeter\n2.Area\n3.Both";
     String typeOfShape;
     double length;
     double breadth;
@@ -60,25 +61,24 @@ class ShapeAndDim{
             float l=sc.nextFloat();
             LOGGER.log(Level.INFO,"Enter the breadth of the Rectangle");
             float b=sc.nextFloat();
-            String z=String.format("Select the Below required option\n1.Perimeter\n2.Area\n3.Both");
-            LOGGER.log(Level.INFO,z);
+            LOGGER.log(Level.INFO,OPTIONS);
             int option=sc.nextInt();
             if(option==1){
                 ShapeAndDim figure=new ShapeAndDim(l,b);
-                double pm=figure.perimeter("rectangle");
+                double pm=figure.perimeter(RECTANGLE);
                 LOGGER.log(Level.INFO,"The perimeter of the Rectangle is-----"+pm);
             }
             else if(option==2){
                 ShapeAndDim figure=new ShapeAndDim(l,b);
-                double ar=figure.area("rectangle");
+                double ar=figure.area(RECTANGLE);
                 LOGGER.log(Level.INFO,"The Area of the Rectangle is-----"+ar);
             }
             else if(option==3){
                 ShapeAndDim figure=new ShapeAndDim(l,b);
-                double pm=figure.perimeter("rectangle");
+                double pm=figure.perimeter(RECTANGLE);
                 LOGGER.log(Level.INFO,"The perimeter of the Rectangle is-----"+pm);
                 ShapeAndDim figure1=new ShapeAndDim(l,b);
-                double ar=figure1.area("rectangle");
+                double ar=figure1.area(RECTANGLE);
                 LOGGER.log(Level.INFO,"The Area of the Rectangle is-----"+ar);
             }
             else{
@@ -94,25 +94,24 @@ class ShapeAndDim{
             float s1=sc.nextFloat();
             float s2=sc.nextFloat();
             float s3=sc.nextFloat();
-            String z=String.format("Select the Below required option\n1.Perimeter\n2.Area\n3.Both");
-            LOGGER.log(Level.INFO,z);
+            LOGGER.log(Level.INFO,OPTIONS);
             int option=sc.nextInt();
             if(option==1){
                 ShapeAndDim figure=new ShapeAndDim(b1,h1,s1,s2,s3);
-                double pm1=figure.perimeter("Triangle");
+                double pm1=figure.perimeter(TRIANGLE);
                 LOGGER.log(Level.INFO,"The perimeter of the Triangle is-----"+pm1);
             }
             else if(option==2){
                 ShapeAndDim figure=new ShapeAndDim(b1,h1,s1,s2,s3);
-                double ar1=figure.area("Triangle");
+                double ar1=figure.area(TRIANGLE);
                 LOGGER.log(Level.INFO,"The Area of the Triangle is-----"+ar1);
             }
             else if(option==3){
                 ShapeAndDim figure=new ShapeAndDim(b1,h1,s1,s2,s3);
-                double pm1=figure.perimeter("Triangle");
+                double pm1=figure.perimeter(TRIANGLE);
                 LOGGER.log(Level.INFO,"The perimeter of the Triangle is-----"+pm1);
                 ShapeAndDim figure2=new ShapeAndDim(b1,h1,s1,s2,s3);
-                double ar1=figure2.area("Triangle");
+                double ar1=figure2.area(TRIANGLE);
                 LOGGER.log(Level.INFO,"The Area of the Triangle is-----"+ar1);
             }
             else{
@@ -122,25 +121,24 @@ class ShapeAndDim{
         else if(((op.toUpperCase()).compareTo(CIRCLE))==0){
             LOGGER.log(Level.INFO,"Enter the radius of the Circle");
             float r=sc.nextFloat();
-            String z=String.format("Select the Below required option\n1.Perimeter\n2.Area\n3.Both");
-            LOGGER.log(Level.INFO,z);
+            LOGGER.log(Level.INFO,OPTIONS);
             int option=sc.nextInt();
             if(option==1){
                 ShapeAndDim figure=new ShapeAndDim(r);
-                double pm2=figure.perimeter("circle");
+                double pm2=figure.perimeter(CIRCLE);
                 LOGGER.log(Level.INFO,"The perimeter of the circle is-----"+pm2);
             }
             else if(option==2){
                 ShapeAndDim figure=new ShapeAndDim(r);
-                double ar2=figure.area("circle");
+                double ar2=figure.area(CIRCLE);
                 LOGGER.log(Level.INFO,"The Area of the circle is-----"+ar2);
             }
             else if(option==3){
                 ShapeAndDim figure=new ShapeAndDim(r);
-                double pm2=figure.perimeter("circle");
+                double pm2=figure.perimeter(CIRCLE);
                 LOGGER.log(Level.INFO,"The perimeter of the circle is-----"+pm2);
                 ShapeAndDim figure3=new ShapeAndDim(r);
-                double ar2=figure3.area("circle");
+                double ar2=figure3.area(CIRCLE);
                 LOGGER.log(Level.INFO,"The Area of the circle is-----"+ar2);
             }
 
