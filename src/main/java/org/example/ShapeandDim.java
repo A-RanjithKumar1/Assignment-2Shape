@@ -6,7 +6,7 @@ class ShapeAndDim{
     private static final Logger LOGGER =  Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
     private static final String Triangle = "TRIANGLE";
     private static final String Rectangle = "RECTANGLE";
-    private static final String Circle = "Circle";
+    private static final String Circle = "CIRCLE";
     String typeOfShape;
     double length;
     double breadth;
