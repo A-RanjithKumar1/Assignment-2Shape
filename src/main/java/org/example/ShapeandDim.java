@@ -62,7 +62,6 @@ class ShapeAndDim{
             float l=sc.nextFloat();
             LOGGER.log(Level.INFO,"Enter the breadth of the Rectangle");
             float b=sc.nextFloat();
-           // LOGGER.log(Level.INFO,OPTIONS);
                 ShapeAndDim figure=new ShapeAndDim(l,b);
                 double pm=figure.perimeter(RECTANGLE);
                 LOGGER.log(Level.INFO,Double.toString(pm),"The perimeter of the Rectangle is-----"+pm);
@@ -94,7 +93,6 @@ class ShapeAndDim{
                 double ar2=figure3.area(CIRCLE);
                 LOGGER.log(Level.INFO,Double.toString(ar2),"The Area of the circle is-----"+ar2);
             }
-
             else{
                 LOGGER.log(Level.INFO,QUERY);
             }
