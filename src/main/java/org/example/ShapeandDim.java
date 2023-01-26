@@ -119,37 +119,9 @@ class ShapeAndDim{
                 LOGGER.log(Level.INFO,QUERY);
             }
         }
-        else if(((op.toUpperCase()).compareTo(CIRCLE))==0){
-            LOGGER.log(Level.INFO,"Enter the radius of the Circle");
-            float r=sc.nextFloat();
-            LOGGER.log(Level.INFO,OPTIONS);
-            int option=sc.nextInt();
-            if(option==1){
-                ShapeAndDim figure=new ShapeAndDim(r);
-                double pm2=figure.perimeter(CIRCLE);
-                LOGGER.log(Level.INFO,Double.toString(pm2),"The perimeter of the circle is-----"+pm2);
-            }
-            else if(option==2){
-                ShapeAndDim figure=new ShapeAndDim(r);
-                double ar2=figure.area(CIRCLE);
-                LOGGER.log(Level.INFO,Double.toString(ar2),"The Area of the circle is-----"+ar2);
-            }
-            else if(option==3){
-                ShapeAndDim figure=new ShapeAndDim(r);
-                double pm2=figure.perimeter(CIRCLE);
-                LOGGER.log(Level.INFO,Double.toString(pm2),"The perimeter of the circle is-----"+pm2);
-                ShapeAndDim figure3=new ShapeAndDim(r);
-                double ar2=figure3.area(CIRCLE);
-                LOGGER.log(Level.INFO,Double.toString(ar2),"The Area of the circle is-----"+ar2);
-            }
 
-            else{
-                LOGGER.log(Level.INFO,QUERY);
-            }
-        }
         else{
             LOGGER.log(Level.INFO,"Please select the proper option");
         }
     }
-
 }
