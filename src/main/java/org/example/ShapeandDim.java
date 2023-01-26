@@ -62,29 +62,12 @@ class ShapeAndDim{
             float l=sc.nextFloat();
             LOGGER.log(Level.INFO,"Enter the breadth of the Rectangle");
             float b=sc.nextFloat();
-            LOGGER.log(Level.INFO,OPTIONS);
-            int option=sc.nextInt();
-            if(option==1){
+           // LOGGER.log(Level.INFO,OPTIONS);
                 ShapeAndDim figure=new ShapeAndDim(l,b);
                 double pm=figure.perimeter(RECTANGLE);
                 LOGGER.log(Level.INFO,Double.toString(pm),"The perimeter of the Rectangle is-----"+pm);
-            }
-            else if(option==2){
-                ShapeAndDim figure=new ShapeAndDim(l,b);
                 double ar=figure.area(RECTANGLE);
                 LOGGER.log(Level.INFO,Double.toString(ar),"The Area of the Rectangle is-----"+ar);
-            }
-            else if(option==3){
-                ShapeAndDim figure=new ShapeAndDim(l,b);
-                double pm=figure.perimeter(RECTANGLE);
-                LOGGER.log(Level.INFO,Double.toString(pm),"The perimeter of the Rectangle is-----"+pm);
-                ShapeAndDim figure1=new ShapeAndDim(l,b);
-                double ar=figure1.area(RECTANGLE);
-                LOGGER.log(Level.INFO,Double.toString(ar),"The Area of the Rectangle is-----"+ar);
-            }
-            else{
-                LOGGER.log(Level.INFO,QUERY);
-            }
         }
         else if(((op.toUpperCase()).compareTo(TRIANGLE))==0){
             LOGGER.log(Level.INFO,"Enter the base of the Triangle");
@@ -95,36 +78,15 @@ class ShapeAndDim{
             float s1=sc.nextFloat();
             float s2=sc.nextFloat();
             float s3=sc.nextFloat();
-            LOGGER.log(Level.INFO,OPTIONS);
-            int option=sc.nextInt();
-            if(option==1){
                 ShapeAndDim figure=new ShapeAndDim(b1,h1,s1,s2,s3);
                 double pm1=figure.perimeter(TRIANGLE);
                 LOGGER.log(Level.INFO,Double.toString(pm1),"The perimeter of the Triangle is-----"+pm1);
-            }
-            else if(option==2){
-                ShapeAndDim figure=new ShapeAndDim(b1,h1,s1,s2,s3);
                 double ar1=figure.area(TRIANGLE);
                 LOGGER.log(Level.INFO,Double.toString(ar1),"The Area of the Triangle is-----"+ar1);
             }
-            else if(option==3){
-                ShapeAndDim figure=new ShapeAndDim(b1,h1,s1,s2,s3);
-                double pm1=figure.perimeter(TRIANGLE);
-                LOGGER.log(Level.INFO,Double.toString(pm1),"The perimeter of the Triangle is-----"+pm1);
-                ShapeAndDim figure2=new ShapeAndDim(b1,h1,s1,s2,s3);
-                double ar1=figure2.area(TRIANGLE);
-                LOGGER.log(Level.INFO,Double.toString(ar1),"The Area of the Triangle is-----"+ar1);
-            }
-            else{
-                LOGGER.log(Level.INFO,QUERY);
-            }
-        }
         else if(((op.toUpperCase()).compareTo(CIRCLE))==0){
             LOGGER.log(Level.INFO,"Enter the radius of the Circle");
             float r=sc.nextFloat();
-            LOGGER.log(Level.INFO,"Select the below option\n 1.Area and Perimeter");
-            int option=sc.nextInt();
-            if(option==1){
                 ShapeAndDim figure=new ShapeAndDim(r);
                 double pm2=figure.perimeter(CIRCLE);
                 LOGGER.log(Level.INFO,Double.toString(pm2),"The perimeter of the circle is-----"+pm2);
@@ -137,8 +99,4 @@ class ShapeAndDim{
                 LOGGER.log(Level.INFO,QUERY);
             }
         }
-        else{
-            LOGGER.log(Level.INFO,"Please select the proper shape");
-        }
     }
-}
