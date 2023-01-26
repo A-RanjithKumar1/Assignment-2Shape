@@ -8,7 +8,7 @@ class ShapeAndDim{
     private static final String RECTANGLE = "RECTANGLE";
     private static final String CIRCLE = "CIRCLE";
     private static final String OPTIONS="Select the Below required option\n1.Perimeter\n2.Area\n3.Both";
-    private static final String query="Oh! choose the correct option";
+    private static final String QUERY="Oh! choose the correct option";
     String typeOfShape;
     double length;
     double breadth;
@@ -83,7 +83,7 @@ class ShapeAndDim{
                 LOGGER.log(Level.INFO,Double.toString(ar),"The Area of the Rectangle is-----"+ar);
             }
             else{
-                LOGGER.log(Level.INFO,query);
+                LOGGER.log(Level.INFO,QUERY);
             }
         }
         else if(((op.toUpperCase()).compareTo(TRIANGLE))==0){
@@ -116,7 +116,7 @@ class ShapeAndDim{
                 LOGGER.log(Level.INFO,Double.toString(ar1),"The Area of the Triangle is-----"+ar1);
             }
             else{
-                LOGGER.log(Level.INFO,query);
+                LOGGER.log(Level.INFO,QUERY);
             }
         }
         else if(((op.toUpperCase()).compareTo(CIRCLE))==0){
@@ -144,7 +144,7 @@ class ShapeAndDim{
             }
 
             else{
-                LOGGER.log(Level.INFO,query);
+                LOGGER.log(Level.INFO,QUERY);
             }
         }
         else{
