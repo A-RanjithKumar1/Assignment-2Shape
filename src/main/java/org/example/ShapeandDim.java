@@ -66,20 +66,20 @@ class ShapeAndDim{
             if(option==1){
                 ShapeAndDim figure=new ShapeAndDim(l,b);
                 double pm=figure.perimeter(RECTANGLE);
-                LOGGER.log(Level.INFO,"The perimeter of the Rectangle is-----"+pm);
+                LOGGER.log(Level.INFO,Double.toString(pm),"The perimeter of the Rectangle is-----"+pm);
             }
             else if(option==2){
                 ShapeAndDim figure=new ShapeAndDim(l,b);
                 double ar=figure.area(RECTANGLE);
-                LOGGER.log(Level.INFO,"The Area of the Rectangle is-----"+ar);
+                LOGGER.log(Level.INFO,Double.toString(ar),"The Area of the Rectangle is-----"+ar);
             }
             else if(option==3){
                 ShapeAndDim figure=new ShapeAndDim(l,b);
                 double pm=figure.perimeter(RECTANGLE);
-                LOGGER.log(Level.INFO,"The perimeter of the Rectangle is-----"+pm);
+                LOGGER.log(Level.INFO,Double.toString(pm),"The perimeter of the Rectangle is-----"+pm);
                 ShapeAndDim figure1=new ShapeAndDim(l,b);
                 double ar=figure1.area(RECTANGLE);
-                LOGGER.log(Level.INFO,"The Area of the Rectangle is-----"+ar);
+                LOGGER.log(Level.INFO,Double.toString(ar),"The Area of the Rectangle is-----"+ar);
             }
             else{
                 LOGGER.log(Level.INFO,"Oh! choose the correct option");
@@ -99,20 +99,20 @@ class ShapeAndDim{
             if(option==1){
                 ShapeAndDim figure=new ShapeAndDim(b1,h1,s1,s2,s3);
                 double pm1=figure.perimeter(TRIANGLE);
-                LOGGER.log(Level.INFO,"The perimeter of the Triangle is-----"+pm1);
+                LOGGER.log(Level.INFO,Double.toString(pm1),"The perimeter of the Triangle is-----"+pm1);
             }
             else if(option==2){
                 ShapeAndDim figure=new ShapeAndDim(b1,h1,s1,s2,s3);
                 double ar1=figure.area(TRIANGLE);
-                LOGGER.log(Level.INFO,"The Area of the Triangle is-----"+ar1);
+                LOGGER.log(Level.INFO,Double.toString(ar1),"The Area of the Triangle is-----"+ar1);
             }
             else if(option==3){
                 ShapeAndDim figure=new ShapeAndDim(b1,h1,s1,s2,s3);
                 double pm1=figure.perimeter(TRIANGLE);
-                LOGGER.log(Level.INFO,"The perimeter of the Triangle is-----"+pm1);
+                LOGGER.log(Level.INFO,Double.toString(pm1),"The perimeter of the Triangle is-----"+pm1);
                 ShapeAndDim figure2=new ShapeAndDim(b1,h1,s1,s2,s3);
                 double ar1=figure2.area(TRIANGLE);
-                LOGGER.log(Level.INFO,"The Area of the Triangle is-----"+ar1);
+                LOGGER.log(Level.INFO,Double.toString(ar1),"The Area of the Triangle is-----"+ar1);
             }
             else{
                 LOGGER.log(Level.INFO,"Oh! choose the correct option");
@@ -126,20 +126,20 @@ class ShapeAndDim{
             if(option==1){
                 ShapeAndDim figure=new ShapeAndDim(r);
                 double pm2=figure.perimeter(CIRCLE);
-                LOGGER.log(Level.INFO,"The perimeter of the circle is-----"+pm2);
+                LOGGER.log(Level.INFO,Double.toString(pm2),"The perimeter of the circle is-----"+pm2);
             }
             else if(option==2){
                 ShapeAndDim figure=new ShapeAndDim(r);
                 double ar2=figure.area(CIRCLE);
-                LOGGER.log(Level.INFO,"The Area of the circle is-----"+ar2);
+                LOGGER.log(Level.INFO,Double.toString(ar2),"The Area of the circle is-----"+ar2);
             }
             else if(option==3){
                 ShapeAndDim figure=new ShapeAndDim(r);
                 double pm2=figure.perimeter(CIRCLE);
-                LOGGER.log(Level.INFO,"The perimeter of the circle is-----"+pm2);
+                LOGGER.log(Level.INFO,Double.toString(pm2),"The perimeter of the circle is-----"+pm2);
                 ShapeAndDim figure3=new ShapeAndDim(r);
                 double ar2=figure3.area(CIRCLE);
-                LOGGER.log(Level.INFO,"The Area of the circle is-----"+ar2);
+                LOGGER.log(Level.INFO,Double.toString(ar2),"The Area of the circle is-----"+ar2);
             }
 
             else{
