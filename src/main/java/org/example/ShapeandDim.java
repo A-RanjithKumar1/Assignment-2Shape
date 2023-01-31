@@ -60,7 +60,6 @@ class ShapeAndDim {
     }
 
     public static void main(String[] args) {
-        try {
             Scanner sc = new Scanner(System.in);
             LOGGER.info("Please enter the shape for which you want to find Area and Perimeter");
             String op = sc.next();
@@ -107,9 +106,6 @@ class ShapeAndDim {
             } else {
                 LOGGER.info(QUERY);
             }
-        } catch (Exception e) {
-            LOGGER.info("Something went wrong while giving input");
-        }
 
     }
 }
