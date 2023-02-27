@@ -1,7 +1,7 @@
 package org.example;
 import java.util.Scanner;
 import java.util.logging.*;
-class ShapeAndDim {
+public class ShapeAndDim {
     static String s;
     private static final Logger LOGGER = Logger.getLogger("InfoLogging");
     private static final String TRIANGLE = "TRIANGLE";
